@@ -8,7 +8,7 @@ avaliações, DRE gerencial e carteira futura num painel escuro com cara de prod
 <!-- Para mostrar um print: salve a Visão Geral em docs/painel.png e troque esta linha por:
 ![Visão Geral do painel](docs/painel.png) -->
 
-**Link publicado:** _adicione aqui a URL do Streamlit Community Cloud_
+**Link publicado:** https://mare-viva-datalyse.streamlit.app
 
 ---
 
