@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="6" width="36" height="36" rx="10" fill="url(#g)"/>
+  <path d="M9 29c3.5 0 3.5-3 7-3s3.5 3 7 3 3.5-3 7-3M9 22c3.5 0 3.5-3 7-3s3.5 3 7 3 3.5-3 7-3" fill="none" stroke="#06101F" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="50" y="25" font-family="Inter, Segoe UI, sans-serif" font-size="16" font-weight="700" letter-spacing="2.5" fill="#E6EDF7">MARÉ VIVA</text>
+  <text x="50" y="40" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" letter-spacing="0.6" fill="#8CA0BF">Pousada &amp; Hostel</text>
+</svg>
