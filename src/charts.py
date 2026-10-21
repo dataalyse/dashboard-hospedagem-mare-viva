@@ -415,7 +415,9 @@ def mapa_brasil(df: pd.DataFrame, geo) -> go.Figure | None:
     df = todas.merge(df, on="UF", how="left").fillna({"Hospedes": 0, "Noites": 0, "Receita": 0})
     fig = go.Figure(go.Choropleth(
         geojson=geo, featureidkey="properties.sigla", locations=df["UF"], z=df["Hospedes"],
-        colorscale=T.ESCALA_SEQ, marker_line_color=T.BORDER, marker_line_width=0.6,
+        # início mais claro que o fundo do card: UFs sem hóspedes continuam visíveis
+        colorscale=[[0, "#1C3557"], [0.12, "#155E75"], [0.55, "#22D3EE"], [1, "#CFFAFE"]],
+        marker_line_color="#3B5A85", marker_line_width=0.7,
         customdata=np.stack([df["Noites"], df["Receita"]], axis=-1),
         hovertemplate="<b>%{location}</b><br>%{z:,.0f} hóspedes<br>%{customdata[0]:,.0f} noites"
                       "<br>R$ %{customdata[1]:,.2f}<extra></extra>",
